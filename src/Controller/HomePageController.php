@@ -17,4 +17,13 @@ class HomePageController extends AbstractController
             'controller_name' => 'HomePageController',
         ]);
     }
+    /**
+     * @Route("/second", name="RouteName")
+     */
+    public function FunctionName(): Response
+    {
+        return $this->render('home_page/index.html.twig', [
+            'controller_name' => 'HomePageController',
+        ]);
+    }
 }
