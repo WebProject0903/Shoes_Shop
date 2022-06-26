@@ -1,20 +1,175 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomePageController Huynh!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
+
+    .example-wrapper{
+        display: flex;
+        margin-left: 10px;
+    }
+    .cover-1{
+        border: 2px solid black;
+        width: 500px;
+        margin-left: -315px;
+    }
+    .cover-2{
+        border: thick double #32a1ce;
+        width: 310px;
+    }
+    .shoe{
+        background-color: #fff;
+        padding: 20px;
+        float: left;
+        margin-bottom: 20px;
+        width: 1500px;
+    }
+    .img-responsive{
+        width: 300px;
+        height: 200px;
+    }
+    .btn a{
+        color: black;
+    }
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://product.hstatic.net/1000282067/product/541624_w2fb1_9005.png_22e32336e3154090881fa5b1720a7ba2_1024x1024.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Balenciaga Triple S</a></h4>
+                        <p>$2.000.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/projectweb/Shoes_Shop/src/Controller/HomePageController.php'|file_link(0) }}">src/Controller/HomePageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/projectweb/Shoes_Shop/templates/home_page/index.html.twig'|file_link(0) }}">templates/home_page/index.html.twig</a></code></li>
-    </ul>
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://product.hstatic.net/1000282067/product/upload_fba6551321de4abfb56add727d69ea33_1024x1024.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Balenciaga Triple S White</a></h4>
+                        <p>$2.000.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-3">
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://product.hstatic.net/1000282067/product/536737_w2fs2_8100.png_797992ad3dca44dfabc9ab5551769280_1024x1024.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Balenciaga Triple S Silver</a></h4>
+                        <p>$2.000.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://product.hstatic.net/1000282067/product/large-536737w2fa19710_f-removebg-preview_a9079f1c05a54627b4a1cfbd94758ff1_1024x1024.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Balenciaga Triple S Beige</a></h4>
+                        <p>$2.000.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://kingshoes.vn/data/upload/media/dh6927-111-gia%CC%80y-nike-air-jordan-4-white-and-black-chi%CC%81nh-ha%CC%83ng-de%CC%82%CC%81n-king-shoes-8-1655975603.jpeg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Air Jordan 4 White</a></h4>
+                        <p>$3.000.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://kingshoes.vn/data/upload/media/nike-dunk-hi-cu7544-400-king-shoes-sneaker-real-hcm35-1623475900.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Jordan High Ambush</a></h4>
+                        <p>$3.000.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-3">
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwf7076c27/images/a_08/CTASGlitterHiHO21_black_pair_08X1.jpg?sw=406" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Converse Chuck Taylor</a></h4>
+                        <p>$2.500.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shoe">
+                <div class="media">
+                    <div class="pull-left">
+                        <a href="#">
+                            <img src="https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw0d7c69ca/images/a_107/7J235_A_107X1.jpg?sw=964" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Converse Star Classic</a></h4>
+                        <p>$2.500.000</p>
+                        <button type="button" class="btn btn-primary mb-3"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 {% endblock %}

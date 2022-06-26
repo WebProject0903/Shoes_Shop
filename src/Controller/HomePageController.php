@@ -9,9 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomePageController extends AbstractController
 {
     /**
-     * @Route("/home", name="app_home_page")
+     * @Route("/home", name="home_page")
      */
-    public function index(): Response
+    public function homePageAction(): Response
     {
         return $this->render('home_page/index.html.twig', [
             'controller_name' => 'HomePageController',
